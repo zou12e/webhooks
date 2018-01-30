@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && forever stop bin/www && forever start bin/www"
+    "start": "npm install &&  pm2 restart app.json"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/zou12e/webhooks/issues"
   },
-  "homepage": "https://github.com/zou12e/webhooks#readme"
+  "homepage": "https://github.com/zou12e/webhooks#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }

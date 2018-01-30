@@ -1,0 +1,8 @@
+app-admin-old
+app-admin-min
+.sass-cache
+npm-debug.log
+node_modules
+logs-admin
+logs-admin/log.log
+*.log

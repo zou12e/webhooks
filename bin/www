@@ -1,11 +1,17 @@
 'use strict';
 
 
-var http  = require('http');
-var server = http.createServer(function(req,res){
+const http = require('http');
 
-	res.end("My frist webhooks");
+
+const port = 7777;
+
+const server = http.createServer(function(req, res) {
+
+    res.end("My frist webhooks");
+
 });
-server.listen(7777);
+server.listen(port);
+
 
 console.log("server is start");

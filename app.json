@@ -1,0 +1,9 @@
+{
+  "apps" : [{
+  	"name": "node-webhooks",
+    "script"    : "./bin/www",  //进程名
+    //"instances" : "max",   //开启进程数，可为数值，也可为max。与服务器cpu核数相关
+    //"exec_mode" : "cluster" // 可选：fork(服务器单核推荐) cluster(多核推荐)
+  }]
+}
+
