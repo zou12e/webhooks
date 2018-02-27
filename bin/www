@@ -1,16 +1,1 @@
-'use strict';
-
-
-const http = require('http');
-
-
-const port = 7777;
-
-const server = http.createServer(function(req, res) {
-
-    res.end("My frist webhooks!!! 2018-2-27 22:40:03");
-
-});
-server.listen(port);
-
-console.log("server is start");
+require('../app');

@@ -1,0 +1,12 @@
+::1 - GET /favicon.ico HTTP/1.1 404 34 - 2.711 ms
+::1 - GET /todo HTTP/1.1 200 4632 - 373.619 ms
+::1 - GET /favicon.ico HTTP/1.1 404 34 - 2.958 ms
+::1 - GET /favicon.ico HTTP/1.1 404 34 - 2.966 ms
+::1 - GET /todo HTTP/1.1 200 4632 - 354.071 ms
+::1 - GET /todo HTTP/1.1 304 - - 332.047 ms
+::1 - GET /todo HTTP/1.1 304 - - 553.466 ms
+::1 - DELETE /todo/ddd HTTP/1.1 200 98 - 401.438 ms
+::1 - GET /todo HTTP/1.1 200 2651 - 280.444 ms
+::1 - POST /todo HTTP/1.1 200 56 - 264.340 ms
+::1 - GET /todo?item=vcuo HTTP/1.1 200 4633 - 1270.686 ms
+::1 - GET /todo?item=vcuo HTTP/1.1 304 - - 259.399 ms
