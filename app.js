@@ -9,7 +9,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const path = require('path');
-const Tool = require('tool_by_zou12e');
+// const Tool = require('tool_by_zou12e');
 const port = process.env.PORT || config.get('port');
 
 const server = http.createServer(app);
@@ -103,7 +103,8 @@ todoController(app);
 // todoLocalController(app);
 
 app.get('/check', (req, res) => {
-    res.send('' + Tool.checkPhone(Tool.getParms('phone', req.url)));
+    // res.send('' + Tool.checkPhone(Tool.getParms('phone', req.url)));
+    res.send('check');
 });
 
 app.get('/cookie', (req, res) => {
