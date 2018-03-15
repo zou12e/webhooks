@@ -2,8 +2,6 @@
 
 
 
-echo "Start deployment"
-echo "pulling source code..."
 
 
 cd c:/xampp/htdocs/node-webhooks/webhooks
@@ -13,7 +11,6 @@ git clean -f
 git pull
 git checkout master
 npm start
-
 
 echo "Finished."
 

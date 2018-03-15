@@ -13,12 +13,12 @@ function runCmd (cmd, args, callback) {
 }
 
 http.createServer(function (req, res) {
+    console.log('start:9527');
     handler(req, res, function (err) {
-        console.log(err);
         res.statusCode = 404;
-        res.end('no such location');
+        res.end('Hello Word!!');
     });
-}).listen(9999);
+}).listen(9527);
 
 handler.on('error', function (err) {
     console.error('Error:', err.message);

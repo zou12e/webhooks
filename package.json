@@ -1,18 +1,10 @@
 {
   "name": "webhooks",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
+  "description": "``` 1. 准备自动发布的项目（webhooks 启动位置app.json）",
+  "main": "deploy.js",
   "scripts": {
-    "start": "npm install &&  pm2 restart app.json",
-    "nodemon": "nodemon ./bin/www",
-    "lint": "./node_modules/.bin/eslint .",
-    "lint:fix": "./node_modules/.bin/eslint . --fix"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -25,20 +17,6 @@
   },
   "homepage": "https://github.com/zou12e/webhooks#readme",
   "dependencies": {
-    "express": "^4.16.2",
-    "body-parser": "^1.18.2",
-    "config": "^1.29.2",
-    "cookie-parser": "^1.4.3",
-    "ejs": "^2.5.6",
-    "file-stream-rotator": "^0.2.0",
-    "mongoose": "^4.9.6",
-    "morgan": "^1.9.0",
-    "path": "^0.12.7",
-    "tool_by_zou12e": "^1.0.2"
-  },
-  "devDependencies": {
-    "@fmfe/eslint-config-fmfe-nodejs": "^0.0.1",
-    "cz-conventional-changelog": "^2.0.0",
-    "eslint": "^4.17.0"
+    "github-webhook-handler": "^0.7.1"
   }
 }
