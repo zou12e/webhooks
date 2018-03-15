@@ -1,17 +1,14 @@
 #!/bin/bash
 
-
-
-
-
-cd c:/xampp/htdocs/node-webhooks/webhooks
+cd ~/www/act-zhanbao
 
 git reset --hard origin/master
 git clean -f
 git pull
 git checkout master
-npm start
+npm run deploy:beta
 
-echo "Finished."
+
+
 
 
