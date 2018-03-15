@@ -3,7 +3,7 @@ const createHandler = require('github-webhook-handler');
 const handler = createHandler({ path: '/', secret: 'wobuzhidao' });
 // 上面的 secret 保持和 GitHub 后台设置的一致
 
-function runCmd (cmd, args, callback) {
+function runCmd(cmd, args, callback) {
     const spawn = require('child_process').spawn;
     const child = spawn(cmd, args);
     let resp = '';
@@ -13,10 +13,10 @@ function runCmd (cmd, args, callback) {
 }
 
 http.createServer(function (req, res) {
-    console.log('start:9527');
     handler(req, res, function (err) {
+        console.log(err);
         res.statusCode = 404;
-        res.end('Hello Word!!');
+        res.end('no such location');
     });
 }).listen(9527);
 
