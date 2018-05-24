@@ -6,13 +6,13 @@ echo "Start deployment"
 echo "pulling source code..."
 
 
-cd c:/xampp/htdocs/node-webhooks/webhooks
+cd /opt/node/wechat-server
 
 git reset --hard origin/master
 git clean -f
 git pull
 git checkout master
-npm start
+npm restart
 
 
 echo "Finished."

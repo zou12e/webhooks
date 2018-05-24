@@ -1,6 +1,6 @@
 const http = require('http');
 const createHandler = require('github-webhook-handler');
-const handler = createHandler({ path: '/', secret: 'wobuzhidao' });
+const handler = createHandler({ path: '/', secret: 'wechat' });
 // 上面的 secret 保持和 GitHub 后台设置的一致
 
 function runCmd (cmd, args, callback) {
@@ -18,7 +18,7 @@ http.createServer(function (req, res) {
         res.statusCode = 404;
         res.end('no such location');
     });
-}).listen(9999);
+}).listen(4000);
 
 handler.on('error', function (err) {
     console.error('Error:', err.message);
