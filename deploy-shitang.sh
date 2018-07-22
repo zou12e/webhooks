@@ -6,7 +6,7 @@ echo "Start deployment"
 echo "pulling source code..."
 
 
-cd /opt/node/wechat-server
+cd /opt/node/node-shitang
 
 git reset --hard origin/master
 git clean -f

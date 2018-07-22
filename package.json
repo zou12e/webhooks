@@ -18,6 +18,7 @@
   "homepage": "https://github.com/zou12e/webhooks#readme",
   "dependencies": {
     "child_process": "^1.0.2",
+    "gitee-webhook-handler": "^0.1.2",
     "github-webhook-handler": "^0.7.1"
   }
 }
